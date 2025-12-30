@@ -18,4 +18,7 @@
 
   rootapp = pkgs.callPackage ./pkgs/rootapp { };
   waterfox-unwrapped = pkgs.callPackage ./pkgs/waterfox-unwrapped { };
+  waterfox = pkgs.callPackage ./pkgs/waterfox {
+    waterfox-unwrapped = pkgs.callPackage ./pkgs/waterfox-unwrapped { };
+  };
 }
