@@ -21,4 +21,5 @@
   waterfox = pkgs.callPackage ./pkgs/waterfox {
     waterfox-unwrapped = pkgs.callPackage ./pkgs/waterfox-unwrapped { };
   };
+  waterfox-bin-unwrapped = pkgs.callPackage ./pkgs/waterfox-bin-unwrapped { };
 }
